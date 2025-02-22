@@ -72,7 +72,7 @@ const LandingPage = () => {
 
       {/* Restaurants Section */}
       
-      <div className='max-w-full mx-auto md:py-10 md:px-4 py-3'>
+      <div className='max-w-full mx-auto md:py-10 md:px-4 py-3 bg-linear-to-r from-[#fffeff] to-[#d7fffe]'>
         <h2 className='text-3xl font-bold text-gray-800 text-center'>Popular Restaurants</h2>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 px-15'>
           {restaurants.map((restaurant, index) => (

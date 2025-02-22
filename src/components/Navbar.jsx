@@ -11,7 +11,7 @@ const Navbar = () => {
       transition={{ type: 'tween', ease: 'easeInOut', duration: 1.5 }}
       className='flex items-center'>
         <img src="cooking1.png" alt="Logo" className='w-8 h-8 hidden md:block' />
-        <Link to="/" className='text-2xl md:pl-3'>Thindham</Link>
+        <Link to="/" className='text-2xl md:pl-3' id='title'>Thindham</Link>
       </motion.div>
 
       {/* Navigation Links */}
