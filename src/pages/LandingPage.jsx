@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaPizzaSlice, FaHamburger, FaIceCream, FaUtensils, FaStore } from 'react-icons/fa';
 import { FaBowlRice } from "react-icons/fa6";
+import Navbar from '../components/Navbar';
 
 const categories = [
   { id: 1, name: 'Pizza', icon: <FaPizzaSlice className='text-red-500 text-5xl' /> },
@@ -27,6 +28,7 @@ const restaurants = [
 const LandingPage = () => {
   return (
     <div className='w-full min-h-screen bg-gray-100'>
+      <Navbar/>
       {/* Hero Section */}
       <div className='relative md:w-full h-[60vh] bg-[url("/food.jpg")] bg-cover bg-center flex flex-col items-center justify-center text-white text-center px-4'>
         <motion.div
@@ -34,7 +36,25 @@ const LandingPage = () => {
         animate={{ x: 0, opacity: 1 }}
         transition={{type: 'tween', ease: 'easeInOut', duration: 2 }}
         className='bg-black bg-opacity-50 md:p-6 p-2 rounded-lg'>
-          <h1 className='md:text-5xl text-2xl font-extrabold drop-shadow-lg'>Delicious Food, Delivered Fast</h1>
+          <div className="flex flex-row items-center">
+  <h1 className="md:text-5xl text-2xl font-extrabold drop-shadow-lg">
+    Delicious Food, Delivered            
+  </h1>
+  
+  <motion.h1   
+    className="md:text-5xl md:ml-3 text-2xl font-extrabold drop-shadow-lg relative"
+  >
+    Fast
+    <motion.div 
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      transition={{ duration: 1.5, ease: "easeOut", delay: 1 }}
+      className="absolute bottom-0 left-0 top-14 h-1 bg-amber-500"
+    />
+  </motion.h1>
+</div>
+
+          
           <p className='text-lg mt-2 font-light'>Satisfy your cravings with just a few clicks</p>
           <div className='flex gap-4 justify-center items-center mt-4'>
             <button className='mt-4 bg-yellow-500 text-black cursor-pointer md:px-6 px-2 md:py-2 py-1 rounded-full text-lg font-semibold hover:bg-yellow-600 transition'>Order Now</button>

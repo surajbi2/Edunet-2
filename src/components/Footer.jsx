@@ -1,6 +1,6 @@
 import React from 'react'
-import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa'
-
+import { FaFacebook,  FaInstagram } from 'react-icons/fa'
+import { FaXTwitter } from 'react-icons/fa6'
 
 const Footer = () => {
   return (
@@ -32,13 +32,13 @@ const Footer = () => {
             <div className='space-y-4'>
               <h3 className='text-xl font-bold'>Follow Us</h3>
               <div className='flex space-x-4'>
-                <a href='#' className='text-gray-400 hover:text-yellow-400 transition hover:scale-125 ease-in duration-500' aria-label='Facebook'>
+                <a href='https://www.facebook.com' className='text-gray-400 hover:text-yellow-400 transition hover:scale-125 ease-in duration-500' aria-label='Facebook'>
                   <FaFacebook size={24} />
                 </a>
-                <a href='#' className='text-gray-400 hover:text-yellow-400 transition hover:scale-125 ease-in duration-500' aria-label='Twitter'>
-                  <FaTwitter size={24} />
+                <a href='https://www.x.com' className='text-gray-400 hover:text-yellow-400 transition hover:scale-125 ease-in duration-500' aria-label='Twitter'>
+                  <FaXTwitter size={24} />
                 </a>
-                <a href='#' className='text-gray-400 hover:text-yellow-400 transition hover:scale-125 ease-in duration-500' aria-label='Instagram'>
+                <a href='https://www.instagram.com' target='_blank' className='text-gray-400 hover:text-yellow-400 transition hover:scale-125 ease-in duration-500' aria-label='Instagram'>
                   <FaInstagram size={24} />
                 </a>
               </div>
