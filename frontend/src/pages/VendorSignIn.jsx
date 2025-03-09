@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { API_PATH } from '../path/apiPath';
-import Navbar from '../components/LoginNavbar';
+import Navbar from '../components/Navbar';
 const VendorSignIn = () => {
   const [formData, setFormData] = useState({
     restaurantName: '',
