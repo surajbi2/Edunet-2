@@ -1,1 +1,3 @@
-export const API_PATH = "http://localhost:5000"; // ✅ Store the API path in a single location
+// export const API_PATH = "http://localhost:5000"; 
+
+export const API_PATH = "https://thindham.onrender.com"; 
