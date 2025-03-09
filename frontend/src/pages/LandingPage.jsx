@@ -88,7 +88,7 @@ const LandingPage = () => {
           <div className='flex gap-4 justify-center items-center mt-4'>
             <Link
             to='/v-login'
-             className='mt-4 bg-yellow-500 text-black cursor-pointer md:px-6 px-2 md:py-2 py-1 rounded-full text-lg font-semibold hover:bg-yellow-600 transition' onClick={() => navigate('/vendor/login')}>Vendor</Link>
+             className='mt-4 bg-yellow-500 text-black cursor-pointer md:px-6 px-2 md:py-2 py-1 rounded-full text-lg font-semibold hover:bg-yellow-600 transition' >Vendor</Link>
 
             <Link to='/login' className='mt-4 bg-yellow-500 text-black cursor-pointer md:px-6 px-2 md:py-2 py-1 rounded-full text-lg font-semibold hover:bg-yellow-600 transition'>Order Now</Link>
             

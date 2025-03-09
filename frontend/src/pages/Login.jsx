@@ -3,7 +3,8 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios"; 
 import Navbar from "../components/Navbar";
 import { motion } from "framer-motion";
-import { API_PATH } from "../path/apiPath"; 
+import { API_PATH } from "../path/apiPath";
+import { Link } from "react-router-dom"; 
 const Login = () => {
   const [loginData, setLoginData] = useState({
     email: "",
@@ -87,7 +88,7 @@ const Login = () => {
           </form>
           
           <p className="text-center text-gray-600 mt-4">
-            Don't have an account? <a href="/sign-up" className="text-yellow-500 font-semibold">Sign Up</a>
+            Don't have an account? <Link to="/sign-up" className="text-yellow-500 font-semibold">Sign Up</Link>
           </p>
         </div>
       </div>

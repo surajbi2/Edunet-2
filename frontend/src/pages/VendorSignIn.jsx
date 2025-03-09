@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { API_PATH } from '../path/apiPath';
+import Navbar from '../components/LoginNavbar';
 const VendorSignIn = () => {
   const [formData, setFormData] = useState({
     restaurantName: '',
@@ -48,6 +49,7 @@ const VendorSignIn = () => {
 
   return (
     <div className="w-full min-h-screen bg-[url('/login-bg.jpg')] bg-cover bg-center flex flex-col">
+      <Navbar/>
       <div className="flex flex-1 items-center justify-center px-4 inset-0 bg-opacity-100 backdrop-blur-xs">
         <div className="bg-white bg-opacity-90 p-8 rounded-xl shadow-lg w-full max-w-md">
           <h2 className="text-3xl font-bold text-center text-gray-800">Vendor Sign Up</h2>

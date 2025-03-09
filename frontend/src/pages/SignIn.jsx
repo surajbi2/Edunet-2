@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import {motion} from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { API_PATH } from '../path/apiPath';
 const SignIn = () => {
   const [formData, setFormData] = useState({
@@ -59,6 +60,7 @@ const SignIn = () => {
    <Navbar />
     </motion.div>
     <div className="w-full min-h-screen bg-[url('/login-bg.jpg')] bg-cover bg-center flex flex-col">
+    
       <div className="flex flex-1 items-center justify-center px-4 inset-0 bg-opacity-100 backdrop-blur-xs">
         <div className="bg-white bg-opacity-90 p-8 rounded-xl shadow-lg w-full max-w-md">
           <h2 className="text-3xl font-bold text-center text-gray-800">Welcome,</h2>
@@ -115,7 +117,7 @@ const SignIn = () => {
           </form>
 
           <p className="text-center text-gray-600 mt-4">
-            Already have an account? <a href="/login" className="text-yellow-500 font-semibold">Log In</a>
+            Already have an account? <Link to="/login" className="text-yellow-500 font-semibold">Log In</Link>
           </p>
         </div>
       </div>
